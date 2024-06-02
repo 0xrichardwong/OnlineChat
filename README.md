@@ -1,6 +1,5 @@
+https://github.com/shigenkawasaki/OnlineChat/assets/24628052/01086e3a-bb7d-4d6d-bf2a-274b43c74fa1
 
-
-https://github.com/shigenkawasaki/OnlineChat/assets/24628052/96a3be2f-e3d7-47ac-a333-b401633978e6
 
 # UDP Chat Application
 
