@@ -2,13 +2,6 @@ import socket
 import os
 from datetime import datetime
 
-"""
-Serverに必要な機能
-1. クライアントのIP Adress, Port、len(username), username, Message、最後のメッセージの時間を格納する機能
-2. "username: message"となるような機能(ただしこれは同じポートの場合はメッセージを表示しない、ポートが異なる場合に表示)
-3. (一定時間が経過したら、リレーシステムから削除)
-"""
-
 def extractInfoFromByteMessage(byte_data):
     # Extract username length
     usernameLen = int(byte_data[0:1].decode('utf-8'))
@@ -33,7 +26,6 @@ def main():
     clientInfos = {}
 
     """
-    # 次に、現在の作業ディレクトリに「temp」という名前のフォルダが存在するかどうかをチェックします。存在しない場合は、os.makedirs() 関数を使用してフォルダを作成します。このフォルダは、クライアントから受信したファイルを格納するために使用されます。
     dpath = 'temp'
     if not os.path.exists(dpath):
         os.makedirs(dpath)
